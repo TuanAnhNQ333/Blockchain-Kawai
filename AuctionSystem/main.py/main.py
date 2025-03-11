@@ -7,7 +7,7 @@ from typing import List
 
 # start calling api
 
-app = FastAPI()    
+app = FastAPI()     
 
 # make table in database if not yet
 Base.metadata.create_all(bind=engine)
