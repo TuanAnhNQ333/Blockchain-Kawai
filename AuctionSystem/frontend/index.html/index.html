@@ -1,24 +1,82 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name = "viewport" conten="width=device-width, initial-scale=1.8">
-        <title>Auction System</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <h1>Online Auction System</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ Thống Đấu Giá Trực Tuyến</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Đấu Giá Online</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Trang Chủ</a>
+                <a href="#auctions">Đấu Giá</a>
+                <a href="#about">Giới Thiệu</a>
+                <a href="#contact">Liên Hệ</a>
+            </div>
+            <div class="user-actions">
+                <button class="login-btn">Đăng Nhập</button>
+                <button class="register-btn">Đăng Ký</button>
+            </div>
+        </nav>
+    </header>
 
-        </header>
-        <main>
-            <section id = "items-list">
-                <h2>Available Auctions</h2>
-                <ul id = "auction-items">
-                    <!-- Items will be loaded here dynamically-->
-                </ul>
-            </section>
-        </main>
-        <script src = "script.js"></script>
-    </body>
+    <main>
+        <section class="hero-section">
+            <h2>Chào Mừng Đến Với Sàn Đấu Giá</h2>
+            <p>Khám phá và đặt giá cho các sản phẩm độc đáo</p>
+        </section>
+
+        <section id="featured-auctions" class="auction-section">
+            <h2>Đấu Giá Nổi Bật</h2>
+            <div class="auction-grid" id="featured-items">
+                <!-- Featured items will be loaded here -->
+            </div>
+        </section>
+
+        <section id="active-auctions" class="auction-section">
+            <h2>Đấu Giá Đang Diễn Ra</h2>
+            <div class="filters">
+                <select id="category-filter">
+                    <option value="">Tất Cả Danh Mục</option>
+                </select>
+                <select id="price-filter">
+                    <option value="">Sắp Xếp Theo Giá</option>
+                </select>
+            </div>
+            <div class="auction-grid" id="auction-items">
+                <!-- Active auctions will be loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Về Chúng Tôi</h3>
+                <p>Hệ thống đấu giá trực tuyến uy tín</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liên Hệ</h3>
+                <p>Email: contact@auction.com</p>
+                <p>Điện thoại: (84) 123-456-789</p>
+            </div>
+            <div class="footer-section">
+                <h3>Theo Dõi</h3>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
